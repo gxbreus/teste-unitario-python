@@ -25,4 +25,7 @@ def potencia(a, b):
     return a ** b
 
 def calcular_media(lista):
-    return 
+    if len(lista) == 0:
+        raise ValueError("A lista não pode estar vazia.")
+    
+    return sum(lista) / len(lista)
